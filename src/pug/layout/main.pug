@@ -1,0 +1,30 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{title}
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    
+    block head
+    
+
+  body(class=pageClass)
+    .page
+      .wrapper
+        include ../includes/modules/modal-form
+        include ../includes/modules/modal-img
+        include ../includes/modules/header
+        include ../includes/modules/hero
+        include ../includes/modules/main-content
+        include ../includes/modules/gallery
+        include ../includes/modules/information
+        include ../includes/modules/sessions
+        include ../includes/modules/map
+        include ../includes/modules/feedback
+
+        include ../includes/modules/footer
+
+    block script

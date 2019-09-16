@@ -1,0 +1,44 @@
+
+#my-modal.modal
+      .modal-content
+        .modal-header
+          .empty-block
+          h2 Бронирование
+          span.close ×
+        .modal-body
+          form
+            label(for="input-date") Дата
+            input(type="date" id="input-date")
+
+            label(for="input-email") Email
+            input(type='text', placeholder='E-mail' id="input-email")
+
+            label(for="input-name") Имя
+            input(type='text', placeholder='Имя' id="input-name")
+            
+            label(for="input-secname") Фамилия
+            input(type='text', placeholder='Фамилия' id="input-secname")
+
+            label(for="input-tel") Телефон
+            input(type='tel', placeholder='+7(xxx) xxx-xx-xx' id="input-tel")
+
+            .cardinfo-group
+              label(for="input-cardinf") Данные карты
+              input(type='text', placeholder='Номер карты' id="input-cardinf" class)
+              .cardinfo-group-row
+                input(type='text', placeholder='Срок действия')
+                input(type='text', placeholder='cvv')
+
+            .cardinfo-chekbox
+              input(type='checkbox', checked, id="input-chek")
+              span Я согласен с пользовательским соглашением и публичной офертой
+            
+
+            input(type='submit', value='Забронировать')
+#my-modalimg.modalimg
+  .modal-content
+    .modal-header
+      span.close ×
+    .modal-bodyimg
+      
+      

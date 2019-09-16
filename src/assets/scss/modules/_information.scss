@@ -1,0 +1,77 @@
+.container-info {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
+    padding: 20px 0;
+}
+.info__main {
+    width: 584px;
+}
+.info__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 20px 0; 
+}
+.info__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #37373F;
+}
+.info__link {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5286EC;
+    margin: 15px 0;
+    
+}
+.info__link>svg {
+    margin-left: 10px;
+}
+.info__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    padding: 68px 0;
+    position: relative;
+
+}
+.avatar__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.avatar__position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 7px;
+}
+.avatar__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #5286EC;
+    width: 200px;
+    text-align: center;
+    margin-top: 11px;
+}
+.avatar__svg-heart {
+    position: absolute;
+    top: 50px;
+    right: 160px;
+}

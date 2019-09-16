@@ -1,0 +1,39 @@
+.footer-container {
+    
+    padding: 0 60px;
+
+}
+.footer__wrapper_white {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.footer__wrapper_grey {
+    display: flex;
+    background-color: #FAF9F8;
+    align-items: center;
+    padding: 30px 0;
+}
+.pay-copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.copyright {
+    width: 256px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B3B3B3;
+    
+}
+.cascade {
+    width: 100px;
+}
+.pay__wrapper-img img {
+    margin-right: 10px;
+}

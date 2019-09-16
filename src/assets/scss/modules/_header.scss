@@ -1,0 +1,29 @@
+// header style
+.header {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+
+}
+.header__phone {
+  padding-left: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  height: 30px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+.header__phone:before {
+  padding-left: 5px;
+  content: 'Телефон:';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B3B3B3;
+}
+.header__loggo-link svg {
+  height: 40px;
+}
+

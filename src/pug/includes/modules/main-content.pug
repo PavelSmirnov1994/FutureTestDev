@@ -1,0 +1,43 @@
+content
+    .container.container-main-cont
+        .main__info
+            h3.main__title Фотосессия в вертолете
+            p.main__text Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты
+            ul.main__advantages-items
+                li.main__advantages-item
+                    .advantages-item__img-wrapper
+                        include ../../../assets/img/Group9.svg
+                    span.advantages-item__text 3 часа съемки
+
+                li.main__advantages-item
+                    .advantages-item__img-wrapper
+                        include ../../../assets/img/Group8.svg
+                    span.advantages-item__text Более 50 фотографий
+
+                li.main__advantages-item
+                    .advantages-item__img-wrapper
+                        include ../../../assets/img/Group7.svg
+                    span.advantages-item__text Москва
+
+                li.main__advantages-item
+                    .advantages-item__img-wrapper
+                        include ../../../assets/img/Group6.svg
+                    span.advantages-item__text Готовы ответить на любые вопросы
+
+            .feedback.main__feedback
+                .feedback__img-wrapper
+                    include ../../../assets/img/Group10.svg
+                span.feedback__text Более 50 отзывов с оценкой
+                .feedback__img-wrapper
+                    include ../../../assets/img/stars.svg
+                    
+        .main-video
+            .main-video__img-wrapper
+                img(class="main-video__img" src="/assets/img/17741.png" alt="video")
+            .main-video__video-wrapper
+                .relation
+                    .relation__ratio 
+                        h3 1234
+                    <iframe class="relation__content"  src="https://www.youtube.com/embed/UALhvLWsdZE"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            .main-video__button-play
+                include ../../../assets/img/arrow.svg

@@ -1,0 +1,71 @@
+.sessions__title {
+    width: 250px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 50px 0 30px 0;
+    color: #37373F;
+}
+.sessions__info {
+    border: 1px solid #C7C7C7;
+    width: 75%;
+    padding: 30px;
+}
+.sessions__data {
+    display: flex;
+    flex-direction: column;
+}
+.sessions__data-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sessions__data-icon {
+    margin-left: 14px;
+}
+.sessions-item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sessions__data-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #37373F;
+}
+.sessions-item__btn {
+    background: #FFFFFF;
+    border: 2px solid #FC9B09;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FC9B09;
+}
+.sessions-item__btn:hover {
+    background-color: #FC9B09;
+    color: #FFFFFF;
+  }
+.sessions-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid #C7C7C7;
+    padding: 10px 0;
+}
+.sessions-item__time,
+.sessions-item__price,
+.sessions-item__slot {
+    margin: 5px 0;
+}
+.sessions-item__price {
+    font-weight: 700;
+    color: #000;
+}

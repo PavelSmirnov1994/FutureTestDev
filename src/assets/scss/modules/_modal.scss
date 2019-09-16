@@ -1,0 +1,277 @@
+:root {
+  --modal-duration: 1s;
+  --modal-color: #ffffff;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1020;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 615px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: var(--modal-color);
+  padding: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+
+  color: #37373F;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-header h2 {
+  align-self: flex-end;
+  margin-top: 25px;
+  
+}
+
+.modal-body {
+  padding:  60px;
+  background: #fff;
+}
+
+.modal-footer {
+  background: var(--modal-color);
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.close {
+  color: #ccc;
+  font-size: 30px;
+  color: #B3B3B3;
+  align-self: flex-start;
+  
+}
+
+.close:hover,
+.close:focus {
+  color:#FC9B09;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+  display: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 0.9;
+  background: url('/assets/img/calendar.png') no-repeat center;
+  background-size: contain;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+  
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+input {
+  width: 100%;
+  
+  box-sizing: border-box;
+  transition: 1s ease;
+  border: 1px solid #C7C7C7;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37373F;
+  outline: none;
+
+  padding: 12px 20px;
+}
+label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37373F;
+  margin: 10px 0;
+  
+
+}
+label::after {
+  content: "*";
+  color: red;}
+.cardinfo-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cardinfo-group-row {
+  display: flex;
+}
+.cardinfo-group-row input {
+  width: 50%;
+}
+.cardinfo-chekbox {
+  display: flex;
+  margin-top: 34px;
+}
+.cardinfo-chekbox input {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-color: #FC9B09;
+}
+.cardinfo-chekbox span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37373F;
+  width: 60%;
+}
+input[type = 'submit'] {
+  margin: 50px auto;
+  width: 85%;
+  background: #FC9B09;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+
+//modal img
+.modalimg {
+  display: none;
+  position: fixed;
+  z-index: 1020;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.modal-bodyimg {
+  background-color: #FFFFFF;
+}
+//w3
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+/* The Modal (background) */
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2100; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modall-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modall-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.closee {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closee:hover,
+.closee:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modall-content {
+    width: 100%;
+  }
+}

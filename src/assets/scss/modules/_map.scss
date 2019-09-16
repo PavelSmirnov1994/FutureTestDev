@@ -1,0 +1,77 @@
+.map{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+.container-map {
+    position: absolute;
+    top: 20px;
+}
+.map__card-info {
+    background: #ffffff;
+    width: 420px;
+    border: 1px solid #C7C7C7;
+    padding:  12px;
+}
+.map__info-item {
+    display: flex;
+    margin: 35px 
+
+    
+}
+.card-info__wrapper-icon {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background: #FC9B09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+
+}
+.card-info__icon {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 51px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.card-info__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-info__wrapper-avatar {
+    width: 67px;
+    height: 67px;
+    margin-right: 10px;
+}
+.card-info__img {
+    width: 100%;
+    height: auto;
+}
+.card-info__text-avatar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-text__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5286EC;
+    }
+.prev,.next {
+    display: none;
+}
+.card__dots {
+    display: none;
+}

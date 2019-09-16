@@ -1,0 +1,92 @@
+.hero {
+ height: 850px;
+ background: 100% 100%  no-repeat;
+ background-size: cover;
+ background-position: center;
+ position: relative;
+}
+.hero-container {
+  height: 100%;
+}
+.hero__content {
+  position: absolute;
+  top: 35%;
+  height: 200px;
+}
+
+.hero__title {
+  max-width: 900px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.hero__title-link {
+  color: #FC9B09;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  height: 96px;
+  width: 224px;
+  margin-bottom: 50px;
+}
+.banner__info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.banner__img-wrapper {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  
+}
+.banner__background {
+  width: 100%;
+  height: 100%;
+}
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.banner__symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin-left: 7px;
+  span {
+    font-size: 35px;
+  }
+}
+.banner__price {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.banner__value  {
+  color: #FFFFFF;
+  font-size: 35px;
+  text-align: left;
+}
+
+.hero__btn {
+  margin-top: 20px;
+}
+.hero__btn:hover {
+  background-color: #FC9B09;
+}
